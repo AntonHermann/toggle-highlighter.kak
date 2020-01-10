@@ -1,34 +1,21 @@
-# Toggle highlighter
+# toggle-highlighter.kak
 
-[![IRC][IRC Badge]][IRC]
-
-###### [Usage](#usage) | [Documentation](#commands) | [Contributing](CONTRIBUTING)
-
-> [Kakoune] extension to toggle highlighters.
+`toggle-highlighter` for [Kakoune].
 
 ## Installation
 
-### [Pathogen]
-
-``` kak
-pathogen-infect /home/user/repositories/github.com/alexherbo2/toggle-highlighter.kak
-```
+Add [`toggle-highlighter.kak`](rc/toggle-highlighter.kak) to your autoload or source it manually.
 
 ## Usage
 
-``` kak
-map global user l ':toggle-highlighter window/ number-lines<ret>'
-```
+Same usage as [`add-highlighter`].
+
+## Configuration
 
 ``` kak
-map global user w ':toggle-highlighter window/ wrap<ret>'
+map global user l ': toggle-highlighter global/ number-lines<ret>' -docstring 'Toggle number-lines highlighter'
+map global user w ': toggle-highlighter global/ wrap -word<ret>' -docstring 'Toggle wrap highlighter'
 ```
-
-## Commands
-
-- `toggle-highlighter` `<path>` `<type>` `[parameter]…`: Toggle highlighter
 
 [Kakoune]: https://kakoune.org
-[IRC]: https://webchat.freenode.net/#kakoune
-[IRC Badge]: https://img.shields.io/badge/IRC-%23kakoune-blue.svg
-[Pathogen]: https://github.com/alexherbo2/pathogen.kak
+[`add-highlighter`]: https://github.com/mawww/kakoune/blob/master/doc/pages/highlighters.asciidoc
