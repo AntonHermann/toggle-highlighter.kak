@@ -13,8 +13,8 @@ Same usage as [`add-highlighter`].
 ## Configuration
 
 ``` kak
-map global user l ': toggle-highlighter global/ number-lines<ret>' -docstring 'Toggle number-lines highlighter'
-map global user w ': toggle-highlighter global/ wrap -word<ret>' -docstring 'Toggle wrap highlighter'
+map global user l ': toggle-highlighter global/number-lines number-lines<ret>' -docstring 'Toggle number-lines highlighter'
+map global user w ': toggle-highlighter global/wrap wrap -word<ret>' -docstring 'Toggle wrap highlighter'
 ```
 
 [Kakoune]: https://kakoune.org
