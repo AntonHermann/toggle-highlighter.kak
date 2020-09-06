@@ -6,6 +6,10 @@
 
 Add [`toggle-highlighter.kak`](rc/toggle-highlighter.kak) to your autoload or source it manually.
 
+``` kak
+require-module toggle-highlighter
+```
+
 ## Usage
 
 Same usage as [`add-highlighter`].

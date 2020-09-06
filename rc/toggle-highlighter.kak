@@ -29,5 +29,3 @@ provide-module toggle-highlighter %{
     }
   }
 }
-
-require-module toggle-highlighter
