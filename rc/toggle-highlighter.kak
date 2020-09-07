@@ -34,8 +34,8 @@ provide-module toggle-highlighter %{
         esac
 
         # Execute the command
-        echo "remove-highlighter ${path}"
-        echo "echo -markup '{red}remove-highlighter ${path}{Default}'"
+        kak_escape remove-highlighter "$path"
+        kak_escape echo -markup "{red}remove-highlighter ${path}{Default}"
       }
     }
   }

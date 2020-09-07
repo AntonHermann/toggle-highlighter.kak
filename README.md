@@ -2,6 +2,12 @@
 
 `toggle-highlighter` for [Kakoune].
 
+## Dependencies
+
+- [prelude.kak]
+
+[prelude.kak]: https://github.com/alexherbo2/prelude.kak
+
 ## Installation
 
 Add [`toggle-highlighter.kak`](rc/toggle-highlighter.kak) to your autoload or source it manually.
