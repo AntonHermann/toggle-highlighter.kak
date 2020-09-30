@@ -1,4 +1,6 @@
 provide-module toggle-highlighter %{
+  require-module prelude
+
   # Signature:
   # toggle-highlighter <path>/[name] <type> [type-params…]
   define-command toggle-highlighter -params 2.. -docstring 'toggle-highlighter <path>/[name] <type> [type-params…]' %{
@@ -17,6 +19,8 @@ provide-module toggle-highlighter %{
       # If [name] is empty, it will be auto-generated.
       # https://github.com/mawww/kakoune/blob/master/src/commands.cc
       evaluate-commands %sh{
+        . "$kak_opt_prelude_path"
+        
         auto_name() {
           printf '%s' "$*" | sed '
             s_/_<slash>_g
